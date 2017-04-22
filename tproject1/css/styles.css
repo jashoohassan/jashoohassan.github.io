@@ -1,0 +1,50 @@
+@CHARSET "ISO-8859-1";
+
+
+body {
+	font-size: 1.6em;
+	background: rgb(66, 29, 244);
+}
+
+.hidden {
+	display: none;
+}
+
+.show {
+	display: inline !important;
+}
+
+button {
+	border: 2px solid block;
+	background: #E5E4E2;
+	font-size: .5em;
+	font-weight: bold;
+	color: black;
+	padding: .8em 2em;
+	margin-top: .4em;
+}
+
+div.row {
+}
+
+
+div.col {
+	background: #eee;
+	border-radius: 2px;
+	padding: 1%;
+	margin: 1%;
+	width: 45%;
+	float: left;
+}
+p.clearBoth
+{
+	clear: both;
+}
+
+footer {
+	clear: both;
+}
+
+a:HOVER {
+	color:red;
+}

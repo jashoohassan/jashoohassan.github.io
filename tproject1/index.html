@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>My Tuturial</title>
+  		<script src="js/functions.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+      	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+
+    <body onload="animate_string('target')">
+		<h1>This is first publish for github page test...</h1>
+        <div class="row">
+        	<div class="col">
+   		 		<p id="cTime">Current Time: <script>showCurrentTime();</script></p>  
+
+				Check for leap year<br>  
+				<button onclick="isLeapYear()">Press to check for leap year</button>  
+				<p></p>
+
+				User number guess<br>  
+				<button onclick="userNumberGuess()">User guess check</button>  
+				<p></p>
+
+				<div>
+					<form>
+			  			1st Number: <input type="number" id="firstNum" value=""><br>
+			  			2nd Number: <input type="number" id="secondNum" value=""><br>
+			  			<input type="button" value="Multiply" onClick="handleNumbers(2)">
+			  			<input type="button" value="Devide" onClick="handleNumbers(3)">
+			  			<p><snap id="f_result"></snap></p>
+					</form>
+				</div>
+				<p></p>
+
+				<div>
+					<form id="temp_form">
+			  			Enter temprature: <input type="number" id="tempratureID" value=""><br>
+  						<input type="radio" name="tempUnit" id="Celsius" checked> Celsius<br>
+  						<input type="radio" name="tempUnit" id="Fahrenheit"> Fahrenheit<br>
+			  			<input type="button" value="Convert" onClick="convertTemprature()">
+			  			<p><snap id="temp_result"></snap></p>
+					</form>
+				</div>
+				
+        	</div>
+
+        	<div class="col">
+				<pre id="target">w3resource</pre>
+
+				Check for 1st Jan on Sunday<br>
+				<button onclick="checkForSunday()">Press to check for Sunday year</button>  
+				<p></p>
+
+				Left to next Christmas<br>  
+				<button onclick="nextChristmas()">Next Christmas</button>
+				<p></p>
+
+				<form action="">
+					Check for Palindrom words<br>  
+					Enter a text: <input type="text" id="palin_t_id" value=""><br> 
+			    	<input type="button" value="check" onClick="check_palin()"><br>
+	  				<snap id="palin_result"></snap>
+				</form>
+				<p></p>
+
+				Click the button to print the current page.<br>  
+				<button onclick="print_current_page()">Print this page</button>  
+				<p></p>
+
+				 <ul>
+				 	<li><a href="index.html">Home</a></li>
+				 	<li><a href="products.html">Products</a></li>
+				 	<li><a href="Contacts.html">Contacts</a>
+				 </ul>
+        	</div>
+        </div> 
+        <p class="clearBoth"></p>
+		
+		<img src="images/p1.jpg"><p></p>
+
+		<form id="temp_form">
+			Enter URL: <input type="text" id="new_urlID" value="http://www.google.ca"><br>
+			<input type="button" value="GO" onClick='openNewUrl()'>
+  		</form>
+  		
+		<p></p>
+		
+		<button id="change-user">Change user</button>
+
+  		<script src="js/main.js"></script>
+
+    </body>
+</html>
